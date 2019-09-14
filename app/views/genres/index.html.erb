@@ -1,0 +1,10 @@
+<h1>Names of all the Genres</h1>
+<% @genres.each do |genre| %>
+  Name: <%= genre.name %><br>
+<% end %>
+
+<%= link_to 'Add new Genre', new_genre_path %>
+<br>
+<%= link_to 'Songs', songs_path %>
+<br>
+<%= link_to 'artists', artists_path %>
